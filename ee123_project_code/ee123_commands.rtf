@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf100
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid101\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid201\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid301\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid401\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid501\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs24 \cf2 EE 123  Encode/Decode Code Commands\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Simpson:\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	\uc0\u8259 	}python3 wavelet/wavelet_encode.py -i simpson.png -o test.p -y 0.88 -c 0.88 --level 3 --tf_y_dc 5 --tf_r_dc 5 --tf_b_dc 5 --tf_y_rs 4.5 --tf_r_rs 4.5 --tf_b_rs 4.5 (bilateral , 7, 50, 50)\uc0\u8232 6.1KB; psnr: 24.03933377913863\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+Dog:\uc0\u8232 \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\uc0\u8259 	}python3 wavelet/wavelet_encode.py -i dog.png -o test.p -y 0.85 -c 0.85 --level 3 --tf_y_dc 5 --tf_r_dc 5 --tf_b_dc 5 --tf_y_rs 4.5 --tf_r_rs 5 --tf_b_rs 5 (bilateral 13, 75, 75)\uc0\u8232 6.5KB; psnr: 29.327623163875522\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Andy:\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf2 {\listtext	\uc0\u8259 	}python3 wavelet/wavelet_encode.py -i Andy_Video.png -o test.p -y 0.85 -c 0.85 --level 3 --tf_y_dc 5 --tf_r_dc 5 --tf_b_dc 5 --tf_y_rs 5 --tf_r_rs 5 --tf_b_rs 5;\uc0\u8232 6.6KB; psnr:25.887413184854346\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Milkyway\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf2 {\listtext	\uc0\u8259 	}python3 baseline_decode/baseline_encode.py -i milkyway.png -o test/milk.p -y 0.195 -c 0.1 --y_scale 16 --c_scale 16  --no_residual (bilateral 11, 50, 50)\uc0\u8232 6.6KB; psnr: 18.252072658475672\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Test: \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf2 {\listtext	\uc0\u8259 	}python3 wavelet/wavelet_encode.py -i EE123_Final_Video.png -o test.p -y 0.88 -c 0.6 --level 3 --tf_y_dc 4.5 --tf_r_dc 5 --tf_b_dc 5 --tf_y_rs 8 --tf_r_rs 5 --tf_b_rs 5 --delta_y_dc 20 (bilateral 13, 75, 75)\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 6.6KB; psnr: 20.13\cf2 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 DECODE CODE: \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls6\ilvl0\cf2 {\listtext	\uc0\u8259 	}python3 wavelet/wavelet_decode.py -i test.zip -o test   --delta_y_rs 16  --delta_c_rs 16 --ref \{reference_img_file\}.png \
+}
