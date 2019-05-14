@@ -4,8 +4,9 @@ Note: Requires at least 2 Raspberry Pis.
 Please read the documentation `ee123_commands.rtf` under 
 `ee123-sp19-project/ee123_project_code` directory.
 
-and run python3 -u `<file_name>.py`
+All codes are under `ee123-sp19-project/ee123_project_code` directory.
 
+Run python3 -u `<file_name>.py`
 
 ## Video Communication
 The project is an open competition in which the winning team will get to keep their radios and interfaces.
@@ -53,13 +54,16 @@ Quantize the result to 8-bit unsigned integer (0-255)
 The video quality evaluation will be done by
 
 - Qualitative assessment 1-10 by the staff of the class.
-- Peak Signal-to-Noise Ratio measure (PSNR) which is defined as: ![](PSNR.png)
+- Peak Signal-to-Noise Ratio measure (PSNR) which is defined as: ![](readme/PSNR.png)
 
 , where MAX is the maximum possible image pixel value (255 for 8bits) and MSE is the mean-square error, or can be expressed as:
-![](MSE(PSNR).png)
+![](readme/MSE(PSNR).png)
 
 This assumes RGB videos are compared, where each color channel has M-by-N pixels and the total number of frames is T.
 
 * Make sure that the radio transmit timeout setting (TOT Menu + 9) is set to at least 90 seconds.
+
+### Reference:
+Site: https://sites.google.com/berkeley.edu/ee123-sp19/project?authuser=0
 
 
